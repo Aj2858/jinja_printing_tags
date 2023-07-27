@@ -3,5 +3,5 @@ from django.shortcuts import render
 # Create your views here.
 
 def data_render(request):
-    d = {'name' : 'Ajay', 'age' : 24}
+    d = {'name' : 'Ajay', 'age' : 9}
     return render(request, 'data_render.html', context= d)
