@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_elif</title>
+</head>
+<body>
+    <center>
+        <h1>if_elif_else_condtion</h1>
+
+{% if a > b and a > c %}
+        <h1>if Block</h1>
+        <h1>a value is {{a}}</h1>
+
+{% elif b > c %}
+        <h1>elif Block</h1>
+        <h1>b value is {{b}}</h1>
+
+{% else %}
+        <h1>else Block</h1>
+        <h1>c value is {{c}}</h1>
+
+{% endif %}
+    </center>
+</body>
+</html>

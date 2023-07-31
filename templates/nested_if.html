@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested_if</title>
+</head>
+<body>
+    <center>
+        <h1>Neste if</h1>
+
+{% if a > b %}
+        {% if a > c %}
+            <h1>if Block</h1>
+            <h1>a value is max</h1>
+        
+        {% else %}
+            <h1>else Block</h1>
+            <h1>c value is max</h1>
+        
+        {% endif %}
+
+{% else %}
+        {% if b > c %}
+            <h1>if block</h1>
+            <h1>b value is max</h1>
+        
+        {% else %}
+            <h1>else block</h1>
+            <h1>c value is max
+            </h1>
+        
+        {% endif %}
+
+{% endif %}
+
+<h1><a href="{% url 'app3:forloop' %}">click here to go for forloop  page</a></h1>
+
+    </center>
+</body>
+</html>

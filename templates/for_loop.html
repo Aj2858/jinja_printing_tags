@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <center>
+        <h1>if_elif_else_condtion</h1>
+
+{% if a > b and a > c %}
+        <h1>if Block</h1>
+        <h1>a value is {{a}}</h1>
+
+{% elif b > c %}
+        <h1>elif Block</h1>
+        <h1>b value is {{b}}</h1>
+
+{% else %}
+        <h1>else Block</h1>
+        <h1>c value is {{c}}</h1>
+
+{% endif %}
+
+{% for i in name %}
+        <h1>{{i}}</h1>
+
+{% endfor %}
+
+{% for i in Hobbies %}
+        <h1>{{i}}</h1>
+
+{% endfor %}
+
+<h1><a href="{% url 'app3:nestedif' %}">click here to go for nestedif page</a></h1>
+    </center>
+</body>
+</html>
+
